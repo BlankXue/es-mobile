@@ -15,7 +15,7 @@
 ## 安装/使用
 
 ```
-   git clone 这个项目
+   git clone git@github.com:JHXue/es-mobile.git
    #安装 npm
    npm install -D
    gulp init
