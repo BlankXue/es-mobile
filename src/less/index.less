@@ -1,0 +1,264 @@
+@base: #12afee;
+@border: #e5e5e5;
+body {
+  background: #f5f5f5;
+}
+
+.header {
+  line-height: 1;
+  h1 {
+    font-size: 38px; /*px*/
+    text-align: center;
+    color: white;
+    background: @base;
+    line-height: 2.6;
+  }
+  .banner {
+    width: 100%;
+  }
+}
+
+section {
+  padding: 0 30px;
+  margin-top: 10px;
+  background: white;
+}
+
+section h1 {
+  font-size: 30px; /*px*/
+  color: #333333;
+  padding: 20px 0;
+
+  &:before {
+    content: '|';
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: bold;
+    color: @base;
+  }
+}
+
+/*辅导*/
+.tutoring {
+  color: #333333;
+  border-bottom: 1px solid @border; /*no*/
+  .title {
+    text-align: center;
+    font-size: 25px; /*px*/
+  }
+  .sub-title {
+    text-align: center;
+    font-size: 18px; /*px*/
+    margin-top: 5px;
+    color: #666666;
+  }
+
+  .img {
+    text-align: center;
+    height: 136px;
+    margin-top: 20px;
+  }
+  .icon1 {
+    width: 151px;
+    height: 111px;
+    margin-top: 12px;
+  }
+
+  .icon2 {
+    width: 172px;
+    height: 135px;
+  }
+
+  .icon3 {
+    width: 166px;
+    height: 136px;
+  }
+  .weui-flex__item {
+    padding: 25px 0;
+    border-right: 1px solid @border;
+  }
+  .weui-flex__item:nth-child(2) {
+    flex: 1.1;
+  }
+
+  .weui-flex__item:last-child {
+    border: none;
+  }
+
+}
+
+/*介绍*/
+.desc {
+  padding: 25px;
+  p {
+    padding: 20px 0;
+    line-height: 1.6;
+    font-size: 24px; /*px*/
+    color: #666666;
+  }
+}
+
+/*导航*/
+.nav {
+  .weui-cells {
+    font-size: 30px; /*px*/
+    margin-top: 0;
+  }
+
+  .weui-cell__ft:after {
+    height: 20px;
+    width: 20px;
+    margin-top: -10px;
+    border-width: 2px 2px 0 0; /*no*/
+  }
+
+  i {
+    width: 61px;
+    height: 61px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .icon1 {
+    background: data-uri("../images/nav-icon1.png");
+  }
+
+  .icon2 {
+    background: data-uri("../images/nav-icon2.png");
+  }
+}
+
+/*收费标准*/
+.standard {
+
+  .img {
+    width: 214px;
+    height: 203px;
+  }
+  .icon1 {
+    background: url("../images/standard-icon1.png");
+  }
+
+  .icon2 {
+    background: url("../images/standard-icon2.png");
+  }
+  .icon3 {
+    background: url("../images/standard-icon3.png");
+  }
+
+  p {
+    font-size: 18px; /*px*/
+    color: #999999;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+/*介绍*/
+.infos {
+  background: white;
+  padding: 0 30px;
+  margin-top: 10px;
+
+  li {
+    border-bottom: 1px solid @border; /*no*/
+    padding: 30px 0;
+  }
+  .img img {
+    width: 180px;
+    height: 140px
+  }
+  .weui-flex__item.img {
+    flex: 2;
+  }
+  .right {
+    flex: 7;
+    padding-left: 30px;
+  }
+  .right h2 {
+    font-size: 30px; /*px*/
+    color: #333333;
+  }
+  .right p {
+    color: #666666;
+    font-size: 24px; /*px*/
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+
+}
+
+/*特色*/
+.features {
+  li {
+    color: #666666;
+    font-size: 24px; /*px*/
+    line-height: 1.6;
+    padding-bottom: 25px;
+    &:before {
+      content: '■';
+      color: @base;
+      margin-right: 10px;
+      margin-top: -10px;
+    }
+  }
+}
+
+/*报名*/
+.apply {
+
+  h1 { border-bottom: 1px solid @border; /*no*/ }
+  .weui-flex{
+    text-align: center;
+    font-size: 24px;/*px*/
+    color: #666666;
+    padding: 25px 0;
+  }
+  p{
+   font-size: 26px;/*px*/
+    color: #333333;
+    margin-top: 25px;
+  }
+  .left {
+    border-right: 1px solid @border; /*no*/;
+  }
+  .bottom {
+    border-top: 1px solid @border; /*no*/;
+  }
+  .left i,.right i{
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 10px;
+  }
+
+  .alipay{
+    width:34px ;
+    height: 34px;
+    background: data-uri("../images/apply-icon1.png");
+  }
+  .qq{
+    width:32px ;
+    height: 34px;
+    background: data-uri("../images/apply-icon2.png");
+  }
+
+  .phone{
+    width:33px ;
+    height: 34px;
+    background: data-uri("../images/apply-icon3.png");
+  }
+
+  .mobile{
+    width:21px ;
+    height: 38px;
+    background: data-uri("../images/apply-icon4.png");
+  }
+
+  .remark{
+    color: #999999;
+    font-size: 20px;/*px*/
+    text-align: center;
+    padding-bottom: 30px;
+
+  }
+}
