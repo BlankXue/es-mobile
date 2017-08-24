@@ -17,8 +17,10 @@
 ```
    git clone git@github.com:JHXue/es-mobile.git
    #安装 npm
-   npm install -D
-   gulp init
+   npm install gulp
+   #cd 项目根目录
+   npm install -D
+   gulp init
    gulp 
 ```
 
